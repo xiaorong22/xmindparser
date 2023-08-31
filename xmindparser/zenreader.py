@@ -34,7 +34,7 @@ def sheet_to_dict(sheet):
         result = {k: v for k, v in result.items() if v}
 
     if config['showRelationship']:
-        result['relationship'] = sheet['relationships']
+        result['relationships'] = sheet['relationships']
         
     return result
 
