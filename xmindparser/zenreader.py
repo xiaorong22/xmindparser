@@ -33,6 +33,9 @@ def sheet_to_dict(sheet):
     if config['hideEmptyValue']:
         result = {k: v for k, v in result.items() if v}
 
+    if config['showRelationship']:
+        result['relationship'] = sheet['relationships']
+        
     return result
 
 
