@@ -40,6 +40,7 @@ def test_xmind_to_dict_debug_zen():
     logger.info(dumps(d))
     assert load_json(expected_json_zen_with_id) == d
 
+test_xmind_to_dict_debug_zen()
 
 def test_xmind_to_dict_default_zen():
     config['showTopicId'] = False
